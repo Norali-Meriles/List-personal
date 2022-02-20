@@ -7,9 +7,6 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Perfil from "../pages/Perfil";
 import Licencias from "../pages/Licencias";
-
-
-
 const RouterDos = () => {
   return (
     <>

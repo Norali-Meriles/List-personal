@@ -39,14 +39,6 @@ const Add = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setFormValues(prevState => ({
-    //       ...formValues,
-    //       name: value
-    //   }));
-    // setFormValues({
-    //       ...formValues,
-    //       createdAt: new Date().getTime()
-    // })
     if (formValues.name === "") {
       alert("Ingrese datos");
       return;
@@ -67,16 +59,6 @@ const Add = () => {
       [e.target.name]: e.target.value,
     });
   };
-
-  // const compare =( a, b )=> {
-  //       if ( a.id < b.id ){
-  //         return -1;
-  //       }
-  //       if ( a.id> b.id ){
-  //         return 1;
-  //       }
-  //       return 0;
-  //     }
 
   return (
     <>
@@ -105,6 +87,7 @@ const Add = () => {
           </Form>
         </Card.Body>
       </Card>
+      <List />
     </>
   );
 };
